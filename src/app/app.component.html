@@ -1,0 +1,165 @@
+<nav class="navbar navbar-light bg-transparent fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ps-lg-5" href="#">Foodlytical</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <h1 class="hero-text">Foodly<span style="color: var(--white-color);">tical</span></h1>
+    <h4 class="hero-text2 text-capitalize">peace forth hill pie is still pupil <span style="color: var(--white-color); text-decoration: underline;">easily it jungle perfect eaten</span>will beneath five gather use desk mental contrast wonder</h4>
+
+</section>
+
+<section class="hero2" id="about">
+    <div class="container pt-lg-5">
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <img src="../assets/image/blog-1.jpg" class="img-fluid imgBox" alt="">
+            </div>
+            <div class="col-md-4 mt-5">
+                <img src="../assets/image/blog-2.jpg" class="img-fluid imgBox" alt="">
+            </div>
+            <div class="col-md-4 mt-5">
+                <img src="../assets/image/blog-3.jpg" class="img-fluid imgBox" alt="">
+            </div>
+        </div>
+    </div>
+    <p class="text-capitalize mt-lg-5 mb-lg-5 p-5 text-center"><span style="color: var(--green-color); font-weight: bold;">experience example fox pictured </span> some slept fought none angle <br> weight sea jet broken offer think leave breath rocket attempt size slope</p>
+</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 ">
+            <img class="img-fluid w-100" src="../assets/image/feature-img-1.png" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+            <h3 class="text-decoration-underline text-uppercase" style="color: var(--green-color);">sugar divide driver effect</h3>
+            <p>Lion favorite spring party higher turn how weight rhythm dig ordinary rope prevent pride stick him universe seven late sleep further judge herd speakclimb fresh pure square silly person actually per gently chart four chain dress front usual
+                raw fly bag thought course finally capital trace end adjective shelter forgotten gift obtain though labor vapor ask pitch glad yet purpose tool crew bar gray effect turn visitor by relationship built type</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h3 class="text-decoration-underline text-uppercase" style="color: var(--green-color);">arrange electricity prepare</h3>
+            <p>May recognize closer visitor fifty deer belong few faster pair continued according poem halfway myself south duck progress asleep activity stood did live tielift white slightly bread begun at thought curve lower shoe park learn mixture author
+                chief next describe citizen movement station stairs under sound hurt</p>
+        </div>
+        <div class="col-md-6 ">
+            <img class="img-fluid w-100" src="../assets/image/feature-img-2.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 ">
+            <img class="img-fluid w-100" src="../assets/image/feature-img-3.png" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+            <h3 class="text-decoration-underline text-uppercase" style="color: var(--green-color);">everything on your phone</h3>
+            <p>customs pretty flag camera creature catch zoo dropped younger some harbor church account name imagine sheet point wire solar cell pay load clean diagramhundred cloud pipe short cattle simplest tall meet bottle particularly skin improve flat
+                cabin observe poetry statement having heading close fear grandmother zoo driver</p>
+        </div>
+    </div>
+</div>
+
+<section class="hero3" id="product">
+    <div class="container ">
+        <div class="row">
+            <h1 class="text-center text-dark mt-5 text-capitalize">best <span style="color: var(--green-color);">seller </span> this week</h1>
+            <div class="col-md-3 mt-lg-1" *ngFor="let item of foodData">
+                <img src="{{ item.foodImg }}" class="img-fluid img-thumbnail imgBox border-0 ">
+                <p class="text-start mt-3 text-capitalize">{{item.foodName}} <span class="float-end">{{item.foodPrice | currency:'EUR'}}</span>
+                </p>
+                <span class="text-capitalize">{{item.foodAbout}}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let customer of customerData">
+            <div class="card border-0">
+                <img class="img-fluid" src=" {{customer.customerImg}} " alt="...">
+                <div class="card-body">
+                    <h4> {{customer.customurName}} </h4>
+                    <span class="card-text yazi"> {{customer.customerComment}} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="page-footer font-small blue pt-4" style="color: var(--green-color); background-color: var(--white-color);">
+
+    <div class="container-fluid text-center text-md-left">
+
+        <div class="row">
+
+            <div class="col-md-6 mt-md-0 mt-lg-5">
+                <p>Foodlytical.</p>
+
+            </div>
+            <div class="col-md-3 mt-lg-5 mb-md-0 mb-3">
+
+                <ul class="list-unstyled text-lg-start text-md-center ">
+                    <li>
+                        <a class="footer-text" href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a class="footer-text" href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="footer-text" href="#product">PRODUCT</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3 mt-lg-5 mb-md-0 mb-3 text-start">
+
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>&nbsp;
+                    <button class="btn btn-outline-success">Donate</button>
+                </div>
+                <img class="img-fluid mt-2" src="../assets/image/payment.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+        <span class="text-black-50"> Emre MISIRLIOĞLU</span>
+    </div>
+
+</footer>

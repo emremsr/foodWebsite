@@ -1,0 +1,156 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/image/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    color: var(--green-color);
+    font-size: 30px;
+    font-weight: bold;
+    transition: 1.3s;
+}
+
+.navbar-brand:hover {
+    letter-spacing: 5px;
+    color: var(--green-color);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--green-color);
+}
+
+.hero-text2 {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--green-color);
+}
+
+.offcanvas-header {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.offcanvas-body {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.hero2 {
+    background-color: var(--yellow);
+    height: 80vh;
+}
+
+.imgBox {
+    opacity: 0.7;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    transition: all 2s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .2s ease-in;
+}
+
+.imgBox:hover {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+p {
+    font-size: 30px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../assets/image/togglebar.png');
+}
+
+.hero3 {
+    background-color: var(--light-green);
+}
+
+.yazi {
+    font-size: 20px;
+}
+
+.footer-text {
+    color: var(--green-color);
+    font-size: 20px;
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: var(--green-color);
+    }
+    .hero-text2 {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: var(--green-color);
+    }
+    .hero2 {
+        height: 180vh;
+    }
+    .imgBox {
+        opacity: 1;
+    }
+}
